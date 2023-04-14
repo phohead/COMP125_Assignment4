@@ -1,0 +1,156 @@
+body {
+    background-color: aliceblue;
+  }
+  
+  #whole-page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+  
+  #slideshow-container {
+    position: relative;
+    top: 5rem;
+    width: 800px;
+    height: 500px;
+    z-index: 1;
+  }
+  
+  #slideshow {
+    position: relative;
+    width: 100%;
+  }
+  
+  .slideshow-button {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  #prevBtn {
+    left: 0;
+  }
+  
+  #nextBtn {
+    right: 0;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .slide img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+  
+  .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  
+  .details h2 {
+    margin-top: 0;
+  }
+  
+  .details p {
+    margin-bottom: 5px;
+  }
+  
+  .details .action {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    padding-top: 80px;
+  }
+  
+  #modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modalClose {
+    width: auto;
+    height: auto;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    background: lightgray;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  button {
+    width: auto;
+    height: auto;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .modal-details {
+    text-align: center;
+    background: none;
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  .progress-bar {
+    position: absolute;
+    bottom: 500px; 
+    width: 100%;
+    height: 10px;
+    background-color: white;
+  }
+  
+  
